@@ -18,7 +18,7 @@ Steps to get started with Google documents. See more verbose version in related 
 
 Example document:
 
-![Bonus: Use GOOGLETRANSLATE for creating initial translations](sheets.png)
+![Bonus: Use GOOGLETRANSLATE for creating initial translations](https://github.com/SC5/google-sheets-translate/raw/master/sheets.png)
 
 Example code:
 
@@ -92,3 +92,14 @@ Retrieve the translations from the sheet. All the options are **optional**.
 * @param {String} opts.sheetOrdinal  Sheet ordinal to process. Defaults to 0 (first sheet)
 * @param {String} opts.range         Range where the translations are. Defaults to whole document (first row contains the header)
 
+## License
+
+Module is MIT -licensed
+
+## Credit
+
+Module is backed by
+
+<a href="http://sc5.io">
+  <img src="http://logo.sc5.io/78x33.png" style="padding: 4px 0;">
+</a>
