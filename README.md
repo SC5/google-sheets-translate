@@ -16,7 +16,11 @@ Steps to get started with Google documents. See more verbose version in related 
 
 **NOTE:** Authentication is required - link based sharing is not currently supported.
 
-Example usage:
+Example document:
+
+![Bonus: Use GOOGLETRANSLATE for creating initial translations](sheets.png)
+
+Example code:
 
 ```javascript
 var _ = require('lodash');
@@ -58,7 +62,7 @@ Example output:
     "sister": "Sister"
   }
 }
-```
+``
 ```json
 {
   "fi": {
