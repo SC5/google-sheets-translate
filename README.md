@@ -88,8 +88,10 @@ Create an instance from the client. All the options are **required**.
 
 Retrieve the translations from the sheet. All the options are **optional**.
 
+_Note: You should assign either sheetOrdinal or SheetName_
 * @param {Object} opts               All the options
 * @param {String} opts.sheetOrdinal  Sheet ordinal to process. Defaults to 0 (first sheet)
+* @param {String} opts.sheetName     Sheet Name to process
 * @param {String} opts.range         Range where the translations are. Defaults to whole document (first row contains the header)
 
 ## License
