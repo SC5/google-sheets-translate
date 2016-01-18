@@ -38,7 +38,7 @@ var output;
 granslator.getTranslations()
 .then(function(translations) {
   _.each(translations, function(translation, locale) {
-    // Writing files in globalize compatible format
+    // In this example we're writing files in Globalize compatible format
     output = {};
     output[locale] = translation;
     fs.writeFileSync(
@@ -90,6 +90,7 @@ Retrieve the translations from the sheet. All the options are **optional**.
 
 * @param {Object} opts               All the options
 * @param {String} opts.sheetOrdinal  Sheet ordinal to process. Defaults to 0 (first sheet)
+* @param {String} opts.sheetName     Sheet name to process. If not provided, uses sheetOrdinal
 * @param {String} opts.range         Range where the translations are. Defaults to whole document (first row contains the header)
 
 ## License
