@@ -23,21 +23,20 @@ Example document:
 Example code:
 
 ```javascript
-var _ = require('lodash');
 var fs = require('fs');
 
 var GoogleSheetsTranslate = require('google-sheets-translate');
 
-var granslator = GoogleSheetsTranslate({
+var gtranslator = new GoogleSheetsTranslate({
   documentId: 'your-document-id',
   serviceEmail: 'your-generated-service-email@developer.gserviceaccount.com',
   serviceKey: fs.readFileSync('./your-service.pem').toString()
 });
 
 var output;
-granslator.getTranslations()
+gtranslator.getTranslations()
 .then(function(translations) {
-  _.each(translations, function(translation, locale) {
+  translations.forEach(function(translation, locale) {
     // In this example we're writing files in Globalize compatible format
     output = {};
     output[locale] = translation;
@@ -45,7 +44,7 @@ granslator.getTranslations()
       'messages/' + locale + '.json',
       JSON.stringify(output, null, 2)
     );
-  })
+  });
 })
 .catch(function(err) {
   console.warn('Failed to generate translations:', err);
