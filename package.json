@@ -15,7 +15,7 @@
   ],
   "author": "SC5",
   "license": "MIT",
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "http://github.com/SC5/google-sheets-translate.git"
   },
@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "google-sheets-api": "^0.4.1",
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.15",
     "polyfill-promise": "^4.0.1"
   }
 }
