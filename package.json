@@ -1,6 +1,6 @@
 {
   "name": "google-sheets-translate",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Maintain your translations in Google Sheets and fetch them into JSON files",
   "main": "lib/index.js",
   "keywords": [
