@@ -1,6 +1,6 @@
 {
   "name": "google-sheets-translate",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Maintain your translations in Google Sheets and fetch them into JSON files",
   "main": "lib/index.js",
   "keywords": [
@@ -23,7 +23,7 @@
     "url": "https://github.com/SC5/google-sheets-translate/issues"
   },
   "dependencies": {
-    "google-sheets-api": "^0.4.3",
+    "google-sheets-api": "^1.0.1",
     "lodash": "^4.17.19",
     "polyfill-promise": "^4.0.1"
   }
